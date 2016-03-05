@@ -5,7 +5,7 @@ This is an rpm building environment for RHEL 6 and its derivatives (CentOS 6, Or
 
 Otherwise, put your sources in ~builder/rpms/SOURCES, specs in ~builder/rpms/SPECS, and away you go.  It's a good idea to mount ~builder/rpms on an external volume, since these containers are temporary use.
 
-"sudo su -" is set up to add additional packages as needed when building RPMs.
+"sudo su -" is set up to add additional packages as needed when building RPMs, and "wget" is included for getting updated sources without exiting the container.
 
 Finally, http://www.rpm.org/max-rpm-snapshot/ is a great reference for learning about building rmms with rpm-build.
 
@@ -20,6 +20,15 @@ docker run --rm -it \
         -v /usr/local/src/rpms/SRPMS:/home/builder/rpms/SRPMS \
         guyton/rpm-buildhost-el6
 ```
+
+Once up, you should start in your SPECS dir, and away you go.
+
+## Things to do
+
+- Get set up for gpg signing
+- Better linking with yumrepo container
+- Add git if might start needing for source fetching
+
 
 - Nat
 
