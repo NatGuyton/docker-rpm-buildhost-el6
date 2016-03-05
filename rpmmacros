@@ -3,20 +3,20 @@
 #
 # This gets all the necessary info from environment variables and system
 # utilities.  The first email address on your gpg keyring should be 
-# your own (nat@guyton.net)
+# your own 
 #
 
-%packager		Nat Guyton
+%packager		Me
 
 # This is the product which a packaged item is part of.  Generally we'll leave
 # this blank or set our custom tag.
 # %distribution		%(cat /etc/redhat-release)
-%distribution		guyton.net Custom Builds
+%distribution		My Custom Builds
 %dist			.el6
 
 # The vendor here is the same as the packager.  Use a company or organization
 # if appropriate
-%vendor			guyton.net 
+%vendor			My Organization 
 
 %_topdir		/home/builder/rpms
 %_tmppath		/home/builder/rpms/BUILD
