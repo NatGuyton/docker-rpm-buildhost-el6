@@ -7,7 +7,7 @@ Otherwise, put your sources in ~builder/rpms/SOURCES, specs in ~builder/rpms/SPE
 
 "sudo su -" is set up to add additional packages as needed when building RPMs, and "wget" is included for getting updated sources without exiting the container.
 
-Finally, http://www.rpm.org/max-rpm-snapshot/ is a great reference for learning about building rmms with rpm-build.
+Finally, http://www.rpm.org/max-rpm-snapshot/ is a great reference for learning about building RPMs with rpm-build.
 
 I typically run this container with command similar to:
 
