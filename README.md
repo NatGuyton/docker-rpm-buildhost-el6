@@ -1,7 +1,7 @@
 # docker-rpm-buildhost-el6
 ## Centos 6 RPM Build Host
 
-This is an rpm building environment for RHEL 6 and its derivatives (CentOS 6, Oracle Linux 6, etc).  
+This is an rpm building environment for RHEL 6 and its derivatives (CentOS 6, Oracle Linux 6, etc).  It is meant to be run as an interactive container rather than as a daemon.  In theory, it should provide a building environment for RHEL 6 on non-RHEL-6 platforms, or provide for an easy clean-up once finished building RPMS - allowing you to keep your server clean of devel packages and the like.
 
 You may want to edit the ~builder/.rpmmacros file to suit your details.  Below, I map my personal copy of it into the container.  Without, you can get a generic one there and copy it out to make your own personalization. (packager, distribution, and vendor tags, specifically)
 
